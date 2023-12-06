@@ -32,7 +32,7 @@ jobs:
         push: true
         tags: mcr.microsoft.com/appsvc/wordpress-alpine-php:${{ github.sha }}
 
-        file: ./Dockerfile
+        file: ./dockerfiles/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
